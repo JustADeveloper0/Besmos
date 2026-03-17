@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.header {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(57, 57, 58);
+    text-align: center;
+    color: rgb(214, 207, 207);
+    font-size: 120%;
+    font-family: Helvetica;
+    line-height: 5vh;
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    height: 95vh;
+}
+
+.inputs {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(101, 103, 105);
+    border-right: 1px solid #333;
+    flex-shrink: 0;
+}
+
+.equationsHolder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.equations {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(147, 147, 150);
+    display: flex;
+    align-items: center;
+}
+
+.equationsText {
+    position: absolute;
+    left: 30%;
+    width: 68%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.equationsText .mq-editable-field {
+    width: 100%;
+    min-height: unset;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 0 8px;
+}
+
+.equationsText .mq-editable-field * {
+    color: white !important;
+}
+
+.equationsText .mq-cursor {
+    border-color: white !important;
+}
+
+.equationsText .mq-editable-field.mq-focused {
+    box-shadow: none !important;
+}
+
+.equationsText .mq-editable-field.mq-focused {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.equationsText .mq-editable-field ::selection {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.equationsText .mq-editable-field textarea {
+    outline: none !important;
+    caret-color: white;
+}
+
+
+
+.numberedHolder {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(113, 113, 117);
+    display: flex;
+    align-items: center;
+}
+
+.numbered {
+    color: white;
+    font-family: Helvetica;
+    font-size: 18px;
+    position: absolute;
+    left: 10%;
+}
+
+.outputs {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    background-color: white;
+}
+
+#board {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
